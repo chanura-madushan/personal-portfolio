@@ -1,0 +1,107 @@
+/* Use Apple's SF Pro system font stack */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    background: #000000; /* pure black */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    color: #ffffff; /* pure white text */
+}
+
+/* Glassmorphism container style */
+section {
+    background: rgba(255, 255, 255, 0.05); /* subtle white glass */
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000000; /* black text on hover */
+}
+
+/* Headings */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Paragraph styling */
+p, li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* List inside projects */
+ol {
+    padding-left: 20px;
+}
+
+/* Contact section */
+#contact p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+/* Among Us - Crewmates - From Cursors-4U.com */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/among-us-crewmates-7696aa6f-css.webp') 0 0, auto !important;
+}
